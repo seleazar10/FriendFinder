@@ -1,16 +1,24 @@
 var express = require('express');
 var path = require('path');
 
+
+//express server
 var app = express();
 
-var port = 3000;
+//initial port
+var PORT = process.env.PORT || 8080;
 
-app.get('/', function (req, res) {
-    res.send('Hello World')
-  })
-   
-  app.listen(port, function(){
-      console.log('listening on: '+port)
-  })
+// Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-  
+// ROUTER
+// require('./app/routing/apiRoutes')(app);
+// require('./app/routing/apiRoutes')(app);
+
+
+//LISTENER
+  app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
+
