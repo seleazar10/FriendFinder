@@ -12,7 +12,7 @@ module.exports = function(app) {
 		var match = {
 			name: '',
 			picture: '',
-			difference: Infinity
+			difference: 100
 		};
 
 		var dataInput = req.body;
