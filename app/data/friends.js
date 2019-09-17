@@ -2,7 +2,7 @@ var friends = [
     {
         name: 'John Smith',
         picture: 'https://randomuser.me/api/portraits/men/91.jpg',
-        rating: [
+        scores: [
             '4',
             '3',
             '4',
@@ -18,7 +18,7 @@ var friends = [
     {
         name: 'Evelyn Mathew',
         picture: 'https://randomuser.me/api/portraits/women/85.jpg',
-        rating: [
+        scores: [
             '2',
             '3',
             '2',
